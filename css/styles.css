@@ -137,6 +137,21 @@ header a:hover, header a:focus {
     width: 100%;
     margin: 0;
   }
+
+  .flex-container-sb {
+  border: solid 1px #222; 
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  }
+
+  .op-area {
+    max-width: 100px;
+    padding: 10px 10px 0px 10px; 
+    align-self:center;
+  }
+
 }
 
 #fb, #twi, #inst, #mail {
@@ -147,6 +162,19 @@ header a:hover, header a:focus {
   display: flex;
   justify-content: center;
 }
+
+.flex-container-sb {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #222; 
+  margin-bottom: 15px;
+}
+
+.op-area {
+    max-width: 200px;
+    padding: 10px 10px 0px 10px; 
+    align-self:center;
+  }
 
 li.dropdown.open a {
   color: #fff;
