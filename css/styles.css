@@ -155,6 +155,7 @@ header a:hover, header a:focus {
   .proj-img-mobile {
   padding: 15px;
   width: 100%;
+  max-width: 100%;
   }
 
 }
@@ -383,6 +384,7 @@ p.category {
 .proj-img-mobile {
   margin-bottom: 15px;
   width: 100%;
+  max-width: 100%;
 }
 
 .laptop {
