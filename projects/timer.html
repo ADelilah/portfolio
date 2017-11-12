@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Timer Odessa</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+<body>
+  <header>
+
+        <nav id="header" class="navbar navbar-fixed-top filled">
+            <div id="header-container" class="container navbar-container">
+              <a id="brand" class="navbar-brand" href="../index.html">Acia Delilah</a>
+         
+              <div id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ion-link"></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a target="_blank" href="http://delilah.ru/"><span class='chiller'>Delilah.ru</span>  photos</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><span class="ion-social-pinterest"></span>  crafts</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c/"><span class="ion-social-pinterest"></span>  drawings</a></li>
+                        <li class="divider"></li>
+                        <li class="d-flex justify-content-around">
+                          <div class="flex-container">
+                            <a id = 'fb' target="_blank" href="https://urlgeni.us/facebook/Rh3z"><span class="ion-social-facebook"></a>
+                            <a id = 'inst' target="_blank" href="https://urlgeni.us/instagram/OPB0"><span class="ion-social-instagram"></a>
+                            <a id = 'twi' target="_blank" href="https://urlgeni.us/twitter/i6ti"><span class="ion-social-twitter"></a>
+                            <a id = 'mail' target="_blank" href="delidance@gmail.com"><span class="ion-email"></span></a>
+                          </div>
+                        </li>
+                    </ul>
+                  </li>                            
+                </ul>
+              </div><!-- /#navbar -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+</header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Timer app</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p>Mobile app for Ukrainian online newspaper <a target="_blank" href="http://timer-odessa.net">Timer</a>. A bit improved and filled in English.</p>
+                </div>  
+                <img class='proj-img' src='../images/timer/article-mockup.png'>
+              
+                <p><b>Format:</b> iOS app </p>
+                <p><b>Challenge:</b> Pack feed, sections, and "I have news" feature into iOS mobile app.</p>
+                <p><b>Result:</b> Here is my version (i.e. it's different from the app launched). I preserved comments (as they're featured on tne website) and violated iOS guideline in the honor of space.</p>
+
+                <h2>Structure</h2>
+                <img src="../images/timer/timer-struct.png" alt="" class="proj-img-small">
+                <h2>Main screen</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/feed.png'></div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8">
+                    <p><b>Headlines:</b> Timer headlines indeed organized by form instead of topic. It is not my improvement.</p>
+                    <p><b>Cute or compact? Popular or chronological?</b> My answer: let user decide. It's really annoing to spend time trying to make Facebook show stuff just as it posted, not in the magical order it uses. In settings presented below you may turn this view even into a "table" of titles (with compact material size and pictures turned off).</p>
+                  </div>
+                </div>
+
+                <h2>Menu</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/menu.png'></div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8">
+                    <p><b>Bookmarks, comments and my news</b> (not presented here) are also some selections of materials. With the tab bar (recomended by iOS guideline) access to these sections would be faster. So why I allowed myself not just to create an <b>extra click</b> but also to add a "heavy" design on the menu? In fact, all these sections are rarely visited: mostly people don't turn back to materials they already read. (May be because most of the texts are shourt enouth to read them at one stretch).</p>
+                    <p><b>Comments</b> are not featured in the real app. People comment and especially - interact with each other in comments rarely. I'd make that trade-off: let people access at least the list of materials they commented (signed up for updates). It doesn't reqire notifications, but if one day we'll decide to add them - in current structure they supposed to be another item of the menu.</p>
+                  </div>
+                </div>
+                
+                <h2>Settings</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
+                    <p>Second screen represents <b>Material size > Comact</b>.</p>
+                    <p>Yes, I like settings to look pretty boring. Some comments:
+                      <ul>
+                        <li>Pictures (show / show on wi-fi / hide) are addressing connection quality and old-school plans.</li>
+                        <li>Connected account (Facebook or local social network Vkontakte) is required to comment (website asks you to sign in with one as well).</li>
+                        <li>Feed controls the first tab. What sections are included and order. As it was mentioned above, you can switch from popularity (top) to chronological order (feed).</li>
+                      </ul> </p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/settings.png'></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/comp-feed.png'></div>
+                </div>
+              
+                <h2>I have news</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/have.png'></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <img class='proj-img-mobile' src='../images/timer/have-filled.png'></div>
+                  <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
+                    <p>This feature encourages users to <strong>send something you witnessed to editorial staff</strong>. In Russian it called "suggest a piece of news" (what takes just two words). Editorial staff says they really get a lot out of it and insisted on quick access to the feature. So, the + on the main screen leads here.</p>
+                  </div>
+                </div>
+
+                <img class='proj-img' src='../images/timer/readers.png'>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
