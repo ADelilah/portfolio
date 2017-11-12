@@ -157,10 +157,6 @@ header a:hover, header a:focus {
   width: 100%;
   }
 
-  .text-near-mobile {
-    margin-top: 0 px;
-  }
-
 }
 
 #fb, #twi, #inst, #mail {
@@ -385,14 +381,9 @@ p.category {
 }
 
 .proj-img-mobile {
-  /*margin-top: 15px;*/
   margin-bottom: 15px;
   width: 100%;
 }
-
- /*.text-near-mobile {
-    margin-top: 30 px;
-  }*/
 
 .laptop {
   /*width: 122.5%;
