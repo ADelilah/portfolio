@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Micewalk</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+
+        <nav id="header" class="navbar navbar-fixed-top filled">
+            <div id="header-container" class="container navbar-container">
+              <a id="brand" class="navbar-brand" href="../index.html">Acia Delilah</a>
+         
+              <div id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ion-link"></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a target="_blank" href="http://delilah.ru/"><span class='chiller'>Delilah.ru</span>  photos</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><span class="ion-social-pinterest"></span>  crafts</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c/"><span class="ion-social-pinterest"></span>  drawings</a></li>
+                        <li class="divider"></li>
+                        <li class="d-flex justify-content-around">
+                          <div class="flex-container">
+                            <a id = 'fb' target="_blank" href="https://urlgeni.us/facebook/Rh3z"><span class="ion-social-facebook"></a>
+                            <a id = 'inst' target="_blank" href="https://urlgeni.us/instagram/OPB0"><span class="ion-social-instagram"></a>
+                            <a id = 'twi' target="_blank" href="https://urlgeni.us/twitter/i6ti"><span class="ion-social-twitter"></a>
+                            <a id = 'mail' target="_blank" href="delidance@gmail.com"><span class="ion-email"></span></a>
+                          </div>
+                        </li>
+                    </ul>
+                  </li>                            
+                </ul>
+              </div><!-- /#navbar -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+</header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Micewalk</h1>
+                <p class='grey'>Machine learning</p>
+                <div class='proj-lead'>
+                  <p>For now: classification on <a target="_blank" href="http://www.noldus.com/animal-behavior-research/products/catwalk">Catwalk XT</a> data for ALS-targeting research in <a target="_blank" href="http://ipac.ac.ru">Institute of Physiologically Active Compounds (IPAC)</a>. Project is in progress.</p>
+                </div>  
+
+                <h2>What do biologists do</h2>
+                <h3> Research</h3>
+                <p><a target="_blank" href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">Amyotrophic lateral sclerosis</a> is a lethal disease. There are no treatments increasing patient's life significantly. The Cell Technologies Group of IPAC RAS (I'll call just "lab") is studying a specific gene known as one of the ALS causes: <a href="https://en.wikipedia.org/wiki/FUS_(gene)">FUS</a>. For that they use two lines of mice:</p>
+                  <ul>
+                    <li><b>FUS - transgenic mice</b> with FUS gene, i.e. ill mice.</li>
+                    <li><b>WT - wild type</b> - normal healthy mice.</li>
+                  </ul>
+                <p>As ALS is a neurodegenerative disease, is affects motor features. Observing motor features we can draw certain conclusions about disease states and effectiveness of possible treatments. (Hope you'll excuse my possible biological inaccuracy :) <br></p>
+
+                <h3> Observations</h3>
+                <p>Back in time, to measure motor features biologists used to dip a mouse into ink, make it walk on a piece of paper and then measure the footprints.</p> 
+                <p>Now they have a device for it. I have no idea why Catwalk XT is called so, while both cats and fashion models are too big to put them in. But imagine it as a glass corrigor with a camera under the floor. Camera captures mouse footprints (in some complicated way you may not care about). Then software coming with Catwalk is calculating some statistics - <b>a row of numbers per animal</b>.</p> 
+
+                <h3> It's a hard life</h3>
+                <p>To produce a row of data we need 4 valid (with certain dispersion) runs per animal. While animal sometimes prefer to pee or sit in a corner shivering instead of running. While biologists can't pee during the experement - it happens on an aseptic floor. On the top of it they used to do ~ 600 clicks per animal in Catwalk soft (footprint measurements) to calculate statistics. But we changed it.</p> 
+
+                <h2>How can I help them</h2>
+                <p><em>- 379 features?! What you was going to do with them before I came by?<br>
+                - I don't know... do some excel stuff...</em></p>
+                <p>We want to know difference in what exact features is reflective of the disease (important features), and if the treatment slow the changes down. The statistics row Catwalk calculates per animal is 379 features long. We can't say anything just looking at the table. I supposed to find out if it possible to use machine learning on Catwalk data, then what features are important, and finally - if the treatment works.</p>
+                <p>What's really going on is described below.</p>
+
+                <h2>Where we are</h2>
+                <p>Row is a row in the dataset - a final statistics per animal I can work with.</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>What</th>
+                      <th>Who</th>
+                      <th>Data</th>
+                      <th>Outcome</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="ion-android-done"></td>
+                      <td>Find "magic buttons" in Catwalk soft to automate footprint measurement</td>
+                      <td>Both</td>
+                      <td>-</td>
+                      <td>Lost some precision. Got ~200 rows instead of 12</td>
+                    </tr>
+                    <tr>
+                      <td><span class="ion-android-done"></td>
+                      <td>My bachelor thesis: prove that classification on Catwalk data is possible, picked methods</td>
+                      <td>Me</td>
+                      <td>~160 FUS/wt mice</td>
+                      <td>Possible important features (well, and a degree :)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="ion-android-close"></td>
+                      <td><s>Evaluate the effectiveness of the treatment.</s> Delayed. Not enough data + doubts if the treatment is actually makes it through into mice brain</td>
+                      <td>Me</td>
+                      <td>~45 treated FUS/wt mice</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td><span class="ion-android-done"></td>
+                      <td>Collect more data</td>
+                      <td>Lab</td>
+                      <td>-</td>
+                      <td>Got ~500 mice instead of 160</td>
+                    </tr>
+                    <tr class='grey-list-item'>
+                      <td></td>
+                      <td>Find out if the treatment makes it through</td>
+                      <td>Lab</td>
+                      <td>-</td>
+                      <td><em>[in progress]</em></td>
+                    </tr>
+                    <tr class='grey-list-item'>
+                      <td></td>
+                      <td>Revisit and clean the classification method and code</td>
+                      <td>Me</td>
+                      <td>~500 mice FUS/wt mice</td>
+                      <td><em>[in progress]</em></td>
+                    </tr>
+                    <tr class='grey-list-item'>
+                      <td></td>
+                      <td>Treatment evaluation(if necessary). Publish the method</td>
+                      <td>Me</td>
+                      <td>?</td>
+                      <td><em>[can share code]</em></td>
+                    </tr>
+                    <tr class='grey-list-item'>
+                      <td></td>
+                      <td>Publish the research outcome</td>
+                      <td>Lab</td>
+                      <td>-</td>
+                      <td><em>[can share data]</em></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

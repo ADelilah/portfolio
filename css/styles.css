@@ -400,6 +400,10 @@ p.category {
   box-shadow: 3px 4px 25px -6px rgba(0,0,0,0.75);
 }
 
+.grey-list-item {
+  opacity: 0.4;
+}
+
 /* ----------------------- END PROJECT PAGE ----------------------- */
 
 .carousel {
