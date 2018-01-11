@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Datacombats</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+
+        <nav id="header" class="navbar navbar-fixed-top filled">
+            <div id="header-container" class="container navbar-container">
+              <a id="brand" class="navbar-brand" href="../index.html">Acia Delilah</a>
+         
+              <div id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ion-link"></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a target="_blank" href="http://delilah.ru/"><span class='chiller'>Delilah.ru</span>  photos</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><span class="ion-social-pinterest"></span>  crafts</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c/"><span class="ion-social-pinterest"></span>  drawings</a></li>
+                        <li class="divider"></li>
+                        <li class="d-flex justify-content-around">
+                          <div class="flex-container">
+                            <a id = 'fb' target="_blank" href="https://urlgeni.us/facebook/Rh3z"><span class="ion-social-facebook"></a>
+                            <a id = 'inst' target="_blank" href="https://urlgeni.us/instagram/OPB0"><span class="ion-social-instagram"></a>
+                            <a id = 'twi' target="_blank" href="https://urlgeni.us/twitter/i6ti"><span class="ion-social-twitter"></a>
+                            <a id = 'mail' target="_blank" href="delidance@gmail.com"><span class="ion-email"></span></a>
+                          </div>
+                        </li>
+                    </ul>
+                  </li>                            
+                </ul>
+              </div><!-- /#navbar -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+</header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Datacombats</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p><a target="_blank" href="http://datacombats.com">Datacombats</a> is a data analysis competitions platform serving <a target="_blank" href="http://www.neurodatalab.com/en/">Neurodata lab</a> researches in emotion detection and recognition area.</p>
+                </div>  
+                <img class='proj-img laptop' src='../images/dc/land.png'>
+                <p><b>Format:</b> Wordpress-based website</p>
+                <p><b>Disclaimer:</b> I have no control on implementation of my designs presented here. </p>
+                <p><b>Challenge:</b> Come up with new structure and design for homepage, combat page, archive and profile with white background.</p>
+                <p><b>Result:</b> New platform structure, designs for homepage, combat page, recognition board (archive) and profile. New pages proposed: dashboard for combat participants, achievements - start tab for user profile, updates. Also some changes in functionality was proposed what resulted in Team and Submission widgets in dashboard, Form a Team modal, etc. In case the team will change their mind and decide to make the site responsive, all the elements are created to be easily arranged in a responsive grid.</p>
+                <p><b>Discoverability vs explanations:</b> Here we deal with so-called "experienced users", somehow familiar with what the data science is. Everything possible is discoverable instead of explained in text.</p>
+
+                <h2>Key facts and structure</h2>
+                <p>Combat process in bare outlines:
+                <ul>
+                  <li>Join combat, read overview and rules</li>
+                  <li>Get data file(s)</li> 
+                  <li>Manipulate data, upload file with results (submission), get score. (Lather, rinse, repeat - max 5 times a day, during all the competition period)</li>
+                  <li>Upload code and documentation</li> 
+                  <li>Get final score based on last uploaded submission, code and documentation - and a prize if you won</li></ul></p>
+                <p>Only registered users can access any data files and participate in combats. Only combat participants may post on combat forum.</p>
+                <p>Datacombats is a small platform. Guideline assumes 0 to 3 active combats at the same time. In fact they rarely have more than one active combats simultaneously. A user can participate in more than one combats, but no one did so yet. Thus, active combats go directly to the main menu. And the dashboard, if a user is participating in a combat, becomes his homepage.</p>
+                <img class='proj-img-small' src='../images/dc/dc-struct.png'> 
+
+                <h2>Landing</h2>
+                <p>Homepage for unlogged users and logged users which not participate any combats. Includes announces of active combats. When a combat is over it remain active and stays here for another 2 weeks.</p>
+                
+                <div id="land-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/dc/Landing.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/Landing-2.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/Landing-3.png">
+                    </div>
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#land-car" data-slide-to="0" class="active"><img src="../images/dc/Landing.png"></li>
+                    <li data-target="#land-car" data-slide-to="1"><img src="../images/dc/Landing-2.png"></li>
+                    <li data-target="#land-car" data-slide-to="2"><img src="../images/dc/Landing-3.png"></li>
+                  </ol>
+                </div>
+                <p></p>
+
+                <h2>Combat page</h2>
+                <p>Above the fold and secondary menus behavior on scroll. Participant may navigate to leaderboard directly from his dashboard. Only public leaderboard is available during the competition period. This is a decision I am not agree with, as your final position becomes a complete surprise in the end of the combat. But.</p>
+                
+                <div id="comb-car" class="carousel slide" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/dc/comb.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/comb-scroll.png">
+                    </div>
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#comb-car" data-slide-to="0" class="active"><img src="../images/dc/comb.png"></li>
+                    <li data-target="#comb-car" data-slide-to="1"><img src="../images/dc/comb-scroll.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Dashboard</h2>
+                <p>Dashboards for a team and a solo figher. Widgets:
+                <ul>
+                  <li>Current position in leaderboard, score and who's submission it was</li>
+                  <li>Daily submission limit and last submission status</li>
+                  <li>Submission or full solution upload. Full includes code and documentation and usually in use in the end of competition.</li>
+                  <li>Current sulution, authors, deadline</li>
+                  <li>Submission history table with filters</li>
+                  <li>Team (current user is the team captain)</li>
+                </ul></p>
+
+                <div id="dash-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/dc/Dash-team.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/Dash-solo.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#dash-car" data-slide-to="0" class="active"><img src="../images/dc/Dash-team.png"></li>
+                    <li data-target="#dash-car" data-slide-to="1"><img src="../images/dc/Dash-solo.png"></li>
+                  </ol>
+
+                </div>
+
+              <h2>Few more pages</h2>
+                <p>Including:
+                <ul>
+                  <li>Profile</li>
+                  <li>Form a team modal</li>
+                  <li>Recognition board (listing of past competitions)</li>
+                </ul></p>
+
+                <div id="fewmore-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/dc/Profile.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/Form.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/dc/Archive.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#fewmore-car" data-slide-to="0" class="active"><img src="../images/dc/Profile.png"></li>
+                    <li data-target="#fewmore-car" data-slide-to="1"><img src="../images/dc/Form.png"></li>
+                    <li data-target="#fewmore-car" data-slide-to="2"><img src="../images/dc/Archive.png"></li>
+                  </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
