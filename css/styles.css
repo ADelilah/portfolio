@@ -97,6 +97,14 @@ header a:hover, header a:focus {
   #header-container {
     padding: 0;
   }
+  
+  #brand {
+  z-index: 1000;
+  position:fixed;
+  display:inline;
+  top: 0em;
+  left: 0em;
+  }
 
   .navbar-nav .open .dropdown-menu>li>a {
     padding-bottom: 15px;
@@ -133,9 +141,9 @@ header a:hover, header a:focus {
     margin-right: 15px;
   }
 
-  .laptop {
+  .readable .laptop {
     width: 100%;
-    margin: 0;
+    margin-left: 0px;
   }
 
   .flex-container-sb {
