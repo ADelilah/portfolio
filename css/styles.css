@@ -426,6 +426,30 @@ p.category {
   left:0;
 }
 
+.carousel-indicators-right {
+  position: absolute !important;
+  padding: 0 !important;
+  text-align: left !important;
+  float: right !important;
+  left: inherit !important;
+  width: 20% !important;
+  height: 100% !important;
+  right:0 !important;
+  padding-top:30px !important;
+}
+
+.carousel-indicators-right>li {
+  height: 20% !important;
+  margin: 10px !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+.carousel-indicators-right>li>img{
+  max-height: 100% !important;
+  width: auto !important;
+}
+
 .carousel.vertical .carousel-inner {
   height: 100%;
 }
