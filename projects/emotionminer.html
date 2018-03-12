@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Emotion Miner</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+
+        <nav id="header" class="navbar navbar-fixed-top filled">
+            <div id="header-container" class="container navbar-container">
+              <a id="brand" class="navbar-brand" href="../index.html">Acia Delilah</a>
+         
+              <div id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ion-link"></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a target="_blank" href="http://delilah.ru/"><span class='chiller'>Delilah.ru</span>  photos</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><span class="ion-social-pinterest"></span>  crafts</a></li>
+                        <li><a target="_blank" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c/"><span class="ion-social-pinterest"></span>  drawings</a></li>
+                        <li class="divider"></li>
+                        <li class="d-flex justify-content-around">
+                          <div class="flex-container">
+                            <a id = 'fb' target="_blank" href="https://urlgeni.us/facebook/Rh3z"><span class="ion-social-facebook"></a>
+                            <a id = 'inst' target="_blank" href="https://urlgeni.us/instagram/OPB0"><span class="ion-social-instagram"></a>
+                            <a id = 'twi' target="_blank" href="https://urlgeni.us/twitter/i6ti"><span class="ion-social-twitter"></a>
+                            <a id = 'mail' target="_blank" href="delidance@gmail.com"><span class="ion-email"></span></a>
+                          </div>
+                        </li>
+                    </ul>
+                  </li>                            
+                </ul>
+              </div><!-- /#navbar -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+</header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Emotion Miner</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p><a target="_blank" href="http://emotionminer.com">Emotion Miner</a> is a micro work platform using human intelligence to create training data for <a target="_blank" href="http://www.neurodatalab.com/en/">Neurodata lab</a> researches in emotion detection and recognition area.</p>
+                </div>  
+                <img class='proj-img laptop' src='../images/em/em.png'>
+                <p><b>Format:</b> Bootstrap-based responsive website</p>
+                <p><b>Disclaimer:</b> I have no control on implementation of my designs presented here.</p>
+                <p><b>Challenge:</b> Come up with new structure and design for sections presented below. Layout for mobile devices.</p>
+                <p><b>Result:</b> New platform structure, designs for homepage, combat page, recognition board (archive) and profile. New pages proposed: dashboard for combat participants, achievements - start tab for user profile, updates. Also some changes in functionality was proposed what resulted in Team and Submission widgets in dashboard, Form a Team modal, etc. In case the team will change their mind and decide to make the site responsive, all the elements are created to be easily arranged in a responsive grid.</p>
+
+                <h2>Key facts and structure</h2>
+                <p>After registration, tutorial and English proficiency tests users may complete small paid tasks:
+                <ul>
+                  <li>Watch a video (usually a talk show)</li>
+                  <li>Switch to fragments (5-10 second cuts from the video)</li> 
+                  <li>For each fragment choose an emotion from a given list, if any</li></ul></p>
+                <p>Work is verified by Neurodata employees. Task are paid via PayPal and differ only in size.</p>
+				
+				        <p><b>Structure:</b></p>
+				        <p><ul>
+                  <li>Home - taskboard (unregistered - landing)</li>
+                  <ul><li>Task</li></ul>
+                  <li>Networking</li> 
+                  <li>Help</li>
+                  <li>Money</li>
+                  <li>Profile</li>
+                  <ul><li>Tutorial</li></ul>
+                  <li>Footer: Reviews (for unregistered - in menu), Terms, Neurodata</li></ul></p>
+
+                <h2>Landing</h2>
+                <p>Homepage for unlogged users. Fixed-position full-screen horizontal paralax carousel. 2 of 4 states:</p>
+                
+                <div id="em-land-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/em/Landing-1.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/em/Landing-2.png">
+                    </div>
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#em-land-car" data-slide-to="0" class="active"><img src="../images/em/Landing-1.png"></li>
+                    <li data-target="#em-land-car" data-slide-to="1"><img src="../images/em/Landing-2.png"></li>
+                  </ol>
+                </div>
+                <p></p>
+
+                <h2>Taskboard</h2>
+                <p>Evolution of the taskboard - homepage for logged user:</p>
+                
+                <div id="taskb-car" class="carousel slide" data-interval="false">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item">
+                      <img src="../images/em/Taskboard-old.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/em/Taskboard-old-2.png">
+                    </div>
+
+                    <div class="item active">
+                      <img src="../images/em/Taskboard.png">
+                    </div>
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#taskb-car" data-slide-to="0"><img src="../images/em/Taskboard-old.png"></li>
+                    <li data-target="#taskb-car" data-slide-to="1"><img src="../images/em/Taskboard-old-2.png"></li>
+                    <li data-target="#taskb-car" data-slide-to="2" class="active"><img src="../images/em/Taskboard.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Task</h2>
+                <p><b>Onboarding.</b> To access any task users should pass tutorials. Tutorials are inevitable: people should learn the meanings of emotion scales. Change of the scales are out of the discussion - users are paid for dealing with them. During tutorials the interface itself turns out to be explained. So I not just didn't add - I actullay removed tips and hints from the working area. After half an our of working they become extremelly annoying.</p>
+                <p><b>3 types of emotion scales:</b> 
+                <ul>
+                  <li>Two scales "choose one of 5 emotions if any, or "None of these"</li>
+                  <li>One scale: "choose level (low, medium, high) for each of 3 emotions"</li>
+                </ul></p>
+                <p><b>Why it's so dark?</b> Did you ever collapse a movie you're watching on full screen and saw a white screen right after, especially in a dimly-lit room? It hurts.</p>
+
+                <div id="task-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/em/EM-Resp.jpg">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/em/Task.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/em/Task-mobile.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#task-car" data-slide-to="0" class="active"><img src="../images/em/EM-Resp.jpg"></li>
+                    <li data-target="#task-car" data-slide-to="1"><img src="../images/em/Task.png"></li>
+                    <li data-target="#task-car" data-slide-to="2"><img src="../images/em/Task-mobile.png"></li>
+                  </ol>
+
+                </div>
+
+              <h2>Other pages</h2>
+
+                <div id="oth-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="../images/em/Money.png">
+                    </div>
+
+                    <div class="item">
+                      <img src="../images/em/Networking.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#oth-car" data-slide-to="0" class="active"><img src="../images/em/Money.png"></li>
+                    <li data-target="#oth-car" data-slide-to="1"><img src="../images/em/Networking.png"></li>
+                  </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
