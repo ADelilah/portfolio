@@ -69,7 +69,8 @@ a, a:focus, a:hover {
   border-radius: 0;
   margin-bottom: 15px;
   height: 50px;
-  vertical-align: middle;
+  line-height: 20px;
+  padding: 15px 15px;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:hover {
@@ -382,15 +383,15 @@ p.category {
 }
 
 .carousel-indicators-right {
-  position: absolute !important;
-  padding: 0 !important;
-  text-align: left !important;
-  float: right !important;
-  left: inherit !important;
-  width: 20% !important;
-  height: 100% !important;
-  right:0 !important;
-  padding-top:30px !important;
+  position: absolute;
+  padding: 0;
+  left: inherit;
+  width: 20%;
+  height: auto;
+  right: 0; 
+  top: 0;
+  padding-top: 0;
+  display: block;
 }
 
 .carousel-indicators-right>li {
@@ -401,27 +402,28 @@ p.category {
 }
 
 .carousel-indicators-right>li>img{
-  max-height: 100% !important;
-  width: auto !important;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.carousel.vertical .carousel-inner {
-  height: 100%;
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
-.carousel.vertical .item {
-  -webkit-transition: 0.6s ease-in-out top;
-  -moz-transition:    0.6s ease-in-out top;
-  -ms-transition:     0.6s ease-in-out top;
-  -o-transition:      0.6s ease-in-out top;
-  left:               0;
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
 }
-.carousel.vertical .active,
-.carousel.vertical .next.left,
-.carousel.vertical .prev.right    { top:     0; }
-.carousel.vertical .next,
-.carousel.vertical .active.right  { top:  100%; }
-.carousel.vertical .prev,
-.carousel.vertical .active.left   { top: -100%; }
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
 
 .carousel-indicators li {
   justify-content: center;
