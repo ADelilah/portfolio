@@ -99,7 +99,7 @@ header a:hover, header a:focus, .navbar-toggler:focus, .navbar-toggler:hover {
 
 nav, nav#start.scrolled, .navbar-collapse.show {
   background-color: #222;
-  max-height: 60px;
+  /*max-height: 60px;*/
 }
 
 nav#start {
@@ -120,10 +120,10 @@ a.navbar-brand {
   font-size: 0.9em;
 }
 
-.navbar-expand-lg>.container {
+/*.navbar-expand-lg>.container {
  padding-right: 15px;
  padding-left: 15px; 
-}
+}*/
 
 .jumbotron {
   padding-top: 30vh;
@@ -139,6 +139,9 @@ a.navbar-brand {
 
 @media (max-width: 767px){
 
+  a.navbar-brand {
+  padding-left: 15px;
+  }
 
   section {
     margin-left: 15px;
