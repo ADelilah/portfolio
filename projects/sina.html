@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Sina Bijoux</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top px-0 navbar-expand-lg nav-bg">
+      <div class="container">
+        <a class="navbar-brand pl-auto my-auto" href="../index.html">Acia Delilah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <ion-icon name="ios-link"></ion-icon>
+        </button>
+
+        <div class="collapse navbar-collapse ml-auto my-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="http://delilah.ru"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><ion-icon name="logo-pinterest"></ion-icon> <span>Crafts</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c"><ion-icon name="logo-pinterest"></ion-icon> <span>Drawings</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/instagram/OPB0"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/facebook/Rh3z"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="mailto:delidance@gmail.com"><ion-icon name="ios-mail"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Sina Bijoux</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p>Designing ideas for <a target="_blank" href="http://sina-bijox.com">Sina Bijoux</a> - smart jewelry search among eBay and AliExpress.</p>
+                </div>  
+                <img class='proj-img laptop' src='../images/sina/sina-mu.png'>
+                <h2>Online shopping nightmare</h2> 
+                <p>There are a lot of nice and cheap stuff from Asia and South East Asia online. But search among them is a nightmare. Skip to the next paragraph, if you know what I’m about.</p>
+
+                <p>First, because of poor localizations. I collect screenshots of amazing translations to Russian, such as notification ‘You should login before screaming, new user, registration shrimp account’.</p>  
+
+                <p>Second, because of that specific understanding of both marketing and search engines sellers have. An item usually has all possible related words in it’s title, photos may belong to some brand (in case of a replica), description starts with photos of other seller’s items. Categories (which can be not that comfortable on the platform itself) can be ignored or even wrong.
+                </p>
+                <h2>What is Sina</h2> 
+                <p>Sina is a search engine by <a href=“https://www.facebook.com/amed.bmstu”>Alexander Medvedev</a> that uses APIs of eBay and AliExpress platforms and applies image recognition to the search results. For now the only type of items is bijouterie.</p>
+
+                <p>Sina Bijoux doesn’t sell things. I just helps to find bijoux and redirects to the original listing.</p>
+
+                <img class='proj-img-small' src='../images/sina/sina-phone.png'>
+
+                <h2>Little search UI bijoux</h2>
+                <p>I collected some wishes and pain points about online shopping in case of wide choice in general and jewelry-specific.</p>
+                <p>Based on them Sina can:</p>
+                <ul>
+                  <li><b>Sort items by body parts</b> they supposed to be putted on - instead of complicated categories. What is the name for a ring connected to a bracelet? No idea. But you definitely wear it on your wrist and finger.</li>
+                  <li><b>Hide prices</b>, if you like people to pick gifts for themselves.</li>
+                  <li><b>Hide fine jewelry</b> - or more pointedly - everything pretending to be fine jewelry. You never can be sure until you have the actual item in your hands. It’s the default, you can turn “fine jewelry” on.</li>
+                  <li><b>Keep same items in front of you</b> when you change filters (instead of getting you back to top) - if possible.</li>
+                  <li><b>Remember search parameters</b> from your previous search.</li>
+                </ul>
+
+                <h2>Screens</h2>
+                <p>There are trends. Like owls. Or music notation symbols. Or some TV-shows. We can parse them, make picks and feature on homepage:</p>
+
+                <img class='proj-img-small proj-img-w-shadow' src='../images/sina/home.png'>
+                <p class="mt-5">Sina collects popular searches, but if you weren't lucky you may need to wait a while. Search, filters and loading:</p>
+
+                <div id="search-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="item carousel-item">
+                      <img src="../images/sina/search.jpg">
+                    </div>
+
+                    <div class="item active carousel-item">
+                      <img src="../images/sina/search-display.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/sina/search-hidden.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/sina/search-loading.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#search-car" data-slide-to="0"><img src="../images/sina/search.jpg"></li>
+                    <li data-target="#search-car" data-slide-to="1" class="active"><img src="../images/sina/search-display.png"></li>
+                    <li data-target="#search-car" data-slide-to="2"><img src="../images/sina/search-hidden.png"></li>
+                    <li data-target="#search-car" data-slide-to="3"><img src="../images/sina/search-loading.png"></li>
+                  </ol>
+
+                </div>
+
+                <p class="mt-5">You need to sign up only if you want to like items and so create your collection. Collection can be shared. Besides login details a user can set name and photo. Gender and 'deliver to' will be remembered from the last search.</p>
+
+                <img class='proj-img-small proj-img-w-shadow mb-5' src='../images/sina/profile.png'>
+
+
+              <hr/>
+              <img class='proj-img-small mt-5' src='../images/sina/sina-photo-mu.png'>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

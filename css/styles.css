@@ -301,6 +301,10 @@ p.category {
   width: 100%;
 }
 
+.proj-img-w-shadow {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.188235) 0px 3px 10px 0px;
+}
+
 .proj-img-mobile {
   margin-bottom: 15px;
   width: 100%;
