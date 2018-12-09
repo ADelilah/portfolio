@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar fixed-top px-0 navbar-expand-lg nav-bg">
       <div class="container">
-        <a class="navbar-brand pl-auto my-auto" href="../index.html">Acia Delilah</a>
+        <a class="navbar-brand pl-auto my-auto" href="http://aciadelilah.com">Acia Delilah</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <ion-icon name="ios-link"></ion-icon>
         </button>
@@ -47,75 +47,105 @@
                 <h1>Micewalk</h1>
                 <p class='grey'>Machine learning</p>
                 <div class='proj-lead'>
-                  <p>Ongoing project. For now: classification on <a target="_blank" href="http://www.noldus.com/animal-behavior-research/products/catwalk">Catwalk XT</a> data for ALS-targeting research in <a target="_blank" href="http://ipac.ac.ru">Institute of Physiologically Active Compounds (IPAC)</a>.</p>
+                  <p>Classification on <a target="_blank" href="http://www.noldus.com/animal-behavior-research/products/catwalk">Catwalk XT</a> data for ALS-targeting research in <a target="_blank" href="http://ipac.ac.ru">Institute of Physiologically Active Compounds (IPAC)</a>. Ongoing project I started as my bachelor thesis.</p>
                 </div>  
 
+                <img class='proj-img' src='../images/mice/prints.jpg'>
+
                 <h2>What do biologists do</h2>
-                <h3> Research</h3>
-                <p><a target="_blank" href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">Amyotrophic lateral sclerosis</a> is a lethal disease. There are no treatments increasing patient's life significantly. The Cell Technologies Group of IPAC RAS (I'll call just "lab") is studying a specific gene known as one of the ALS causes: <a href="https://en.wikipedia.org/wiki/FUS_(gene)">FUS</a>. For that they use two lines of mice:</p>
+                <h3 class="pt-0">Research</h3>
+                <p><a target="_blank" href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">Amyotrophic lateral sclerosis</a> is a lethal disease. There are no treatments increasing patient's life significantly. The Cell Technologies Group of IPAC RAS (I'll call just "lab") is studying a specific gene known as one of the ALS causes: <a href="https://en.wikipedia.org/wiki/FUS_(gene)">FUS</a>. For that they have two lines of animals:</p>
                   <ul>
-                    <li><b>FUS - transgenic mice</b> with FUS gene, i.e. ill mice.</li>
-                    <li><b>WT - wild type</b> - normal healthy mice.</li>
+                    <li>FUS - transgenic mice with FUS gene, i.e. ill mice.</li>
+                    <li>WT - wild type mice - normal healthy mice.</li>
                   </ul>
-                <p>As ALS is a neurodegenerative disease, is affects motor features. Observing motor features we can draw certain conclusions about disease states and effectiveness of possible treatments. (Hope you'll excuse my possible biological inaccuracy :) <br></p>
+                <p>As ALS is a neurodegenerative disease, is affects motor features. Observing motor features we can draw certain conclusions about disease states and effectiveness of possible treatments.<br></p>
 
-                <h3> Observations</h3>
-                <p>Back in time, to measure motor features biologists used to dip a mouse into ink, make it walk on a piece of paper and then measure the footprints.</p> 
-                <p>Now they have a device for it. I have no idea why Catwalk XT is called so, while both cats and fashion models are too big to put them in. But imagine it as a glass corrigor with a camera under the floor. Camera captures mouse footprints (in some complicated way you may not care about). Then software coming with Catwalk is calculating some statistics - <b>a row of numbers per animal</b>.</p> 
+                <h3>Data and dimensions</h3>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <figure class="figure right-floated">
+                      <img src="../images/mice/catwalk.jpg" class="figure-img img-fluid">
+                      <figcaption class="figure-caption caption grey">Generally CatWalk is a glass corridor with a camera under the floor and questionable branding as neither cats nor fashion models won’t fit in.</figcaption>
+                    </figure>
+                    <p>Observations are made with <a href="www.noldus.com/animal-behavior-research/products/catwalk">Noldus CatWalk™ XT system</a> which captures animal footprints and calculates some statistics based on footprint measurements. Footprints can be measured manually or - as in our case - automatically.</p>
 
-                <h3> It's a hard life</h3>
-                <p>To produce a row of data we need 4 valid (with certain dispersion) runs per animal. While animal sometimes prefer to pee or sit in a corner shivering instead of running. While biologists can't pee during the experement - it happens on an aseptic floor. On the top of it they used to do ~ 600 clicks per animal in Catwalk soft (footprint measurements) to calculate statistics. But we changed it.</p> 
+                    <p>Output is a row of 350+ numbers per animal - too much for a human to take a look and come up with a conclusion. At the same time - dataset is extremely small due to troublesome* data collection.</p> 
 
-                <h2>How can I help them</h2>
-                <p><em>- 379 features?! What you was going to do with them before I came by?<br>
-                - I don't know... do some excel stuff...</em></p>
-                <p>We want to know difference in what exact features is reflective of the disease (important features), and if the treatment slow the changes down. The statistics row Catwalk calculates per animal is 379 features long. We can't say anything just looking at the table. I supposed to find out if it possible to use machine learning on Catwalk data, then what features are important, and finally - if the treatment works.</p>
-                <p>What's really going on is described below.</p>
+                    <p class="caption grey">* - Besides the transgenic animal itself which you need to breed and raise until a specific age, to produce a row of data we need 4 valid runs per animal. That means you should make mice - half of which are sick - to run through some scary place with a certain velocity dispersion. Well, sometimes mice prefer to pee on the scary place or just to sit in a corner. While biologists can't pee during the experiment as it requires an aseptic floor where, obviously, you have no toilet. On the top of it they used to do ~ 600 clicks per animal in Catwalk soft to measure footprint manually. Now we know that automatic measurement is precise enough for us, but back then it was the only option to have at least some data.<br>I should say all this is still much better than to dip a mouse into ink, make it walk on a piece of paper and then measure the footprints with a ruler as biologists did back in time.</p>
 
-                <h2>Where we are</h2>
-                <p>Row is a row in the dataset - a final statistics per animal I can work with.</p>
-                <table class="table">
+                    <p>We had more features (numbers in a row) than samples (rows), i.e. totally <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">cursed with dimensionality</a>.</p>
+
+                    
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    
+                  </div>
+                </div>
+
+
+                <h2>How can I help</h2>
+                <h3>My bachelor thesis</h3>
+                <p>- 379 parameters?! What you was going to do with them before I came by?<br>
+                - I don't know... do some excel stuff...</p>
+                <p>The objective of my bachelor thesis "Machine learning tools for laboratory mice motor functions research" was to prove or disprove the possibility to build a model that solves classification problem for the data corpus available in the moment.</p>
+
+                <p>Long story short - classification succeed. I was graduated with ‘excellent’.</p>
+
+                <h3>Real life</h3>
+                <p>I had a draft model and the <s>conclusion</s> hope that ML classification is possible on the output of CatWalk XT (which is barely has competitors as tool) and one day will really help the original mission - treatment evaluation.</p>
+                <p>I continued the collaboration with the lab and basically - new data, new scenario, more code, new model. For now I have a method I hope to publish. I.e. a scenario and code to build a model that can classify = say if an animal has FUS gene or not following on from Catwalk-generated ‘row of numbers’. Within it the so-called ‘important features’ are distinguished - those difference in which is reflective of the disease.</p>
+
+                <h3>If you are curious how can we evaluate a treatment</h3>
+                <p>With more troublesome data collection first as we need treated animals. More specifically, 4 groups: treated FUS, treated wild, placebo treated FUS, placebo treated wild.</p>
+
+                <p>A classifier in fact returns not just 1 or 0, but a probability in the range [0,1]. I.e. not just ill or healthy, but ‘how much ill’. So if we lucky a treated FUS animal will be ‘less ill than it should be ceteris paribus’, while there will be no statistically significant difference between both wild type groups.
+                </p>
+
+                <h2>The whole story timeline</h2>
+
+                <table class="table table-responsive-sm">
                   <thead>
                     <tr>
                       <th></th>
                       <th>What</th>
                       <th>Who</th>
-                      <th>Data</th>
+                      <th>Dataset</th>
                       <th>Outcome</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span class="ion-android-done"></td>
+                      <td><ion-icon name="checkmark"></ion-icon></td>
                       <td>Find "magic buttons" in Catwalk soft to automate footprint measurement</td>
                       <td>Both</td>
                       <td>-</td>
                       <td>Lost some precision. Got ~200 rows instead of 12</td>
                     </tr>
                     <tr>
-                      <td><span class="ion-android-done"></td>
+                      <td><ion-icon name="checkmark"></ion-icon></td>
                       <td>My bachelor thesis: prove that classification on Catwalk data is possible, method estaiblished</td>
                       <td>Me</td>
                       <td>~160 FUS/wt mice</td>
-                      <td>Possible important features (well, and a degree :)</td>
+                      <td>Possible important features (well, and a diploma :)</td>
                     </tr>
                     <tr>
-                      <td><span class="ion-android-close"></td>
+                      <td><ion-icon name="checkmark"></ion-icon></td>
                       <td><s>Evaluate the effectiveness of the treatment.</s> Delayed as the compound planned for research (as a treatment) didn't pass some pre-tests (is not accumulating in animal brain).</td>
                       <td>Me</td>
                       <td>~45 treated FUS/wt mice</td>
                       <td>-</td>
                     </tr>
                     <tr>
-                      <td><span class="ion-android-done"></td>
+                      <td><ion-icon name="checkmark"></ion-icon></td>
                       <td>Collect more data</td>
                       <td>Lab</td>
                       <td>-</td>
                       <td>Got ~500 mice instead of 160</td>
                     </tr>
                     <tr>
-                      <td><span class="ion-android-done"></td>
-                      <td>Revisit and improve the classification method and code</td>
+                      <td><ion-icon name="checkmark"></ion-icon></td>
+                      <td>Revisit and improve the method and code</td>
                       <td>Me</td>
                       <td>~500 mice FUS/wt mice</td>
                       <td>14 important features with XGBoots AUC ~ 0.9 if thainig on them only</td>
@@ -143,7 +173,7 @@
                     </tr>
                     <tr class='grey-list-item'>
                       <td></td>
-                      <td>Use the model for treatment evaluation when any</td>
+                      <td>Use the model for the treatment evaluation when any</td>
                       <td>Both</td>
                       <td>-</td>
                       <td><em></em></td>
