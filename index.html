@@ -23,7 +23,7 @@
 		  <div class="collapse navbar-collapse ml-auto my-auto" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item mr-2">
-		        <a target="_blank" class="nav-link" href="http://delilah.ru"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
+		        <a target="_blank" class="nav-link" href="http://delilah.ru" data-toggle="modal" data-target="#vpnModal"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
 		      <li class="nav-item mr-2">
 		        <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><ion-icon name="logo-pinterest"></ion-icon> <span>Crafts</span></a></li>
 		      <li class="nav-item mr-2">
@@ -37,17 +37,45 @@
 		    </ul>
 		  </div>
 		</div>
-	</nav>
-   
 
-   <!-- old-->
+	</nav>
+
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-         		<h1>Whatever I do. Stirred and not shaken. <br>Under construction</h1>
-        		<p class="text-left">"I'm a little bit of everything all rolled into one"<br>- Meredith Brooks</p>
+        <h1>Whatever I do. Stirred and not shaken. <br>Under construction</h1>
+        <div class="d-flex justify-content-between flex-wrap">
+          <p class="text-left">"I'm a little bit of everything all rolled into one"<br>- Meredith Brooks</p>
+          <div>
+            <img src="../images/safari.svg" onerror="this.onerror=null; this.src='../images/safari.png'">
+            <img src="../images/chrome.svg" onerror="this.onerror=null; this.src='../images/chrome.png'">
+            <span>Safari or Chrome only</span>
+          </div>
+        </div>
       </div>
     </div> 
+
+    <!-- vpn-modal-->
+    <div class="modal fade mods" id="vpnModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Can't load my photos?</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="../images/vpn.svg" onerror="this.onerror=null; this.src='../images/vpn.png'">
+            You need VPN to access the site from Russia. As well as any other Weebly-based site. Sorry.
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-outline-primary" href="#" data-dismiss="modal">Got it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end vpn-modal-->
     
   </header>
 
