@@ -172,11 +172,22 @@ a.navbar-brand {
 
 .mods .modal-content {
   padding: 40px;
+  background-color: var(--back);
 }
 
 .mods .modal-header, .mods .modal-footer, .mods .modal-body, .mods img {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  padding-top: 0px;
   border: none;
+}
+
+.mods .modal-header {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.mods .modal-footer {
+  padding-bottom: 0;
 }
 
 .mods h3 {
@@ -192,6 +203,18 @@ a.navbar-brand {
   padding: 0;
   margin: 0;
   line-height: inherit;
+}
+
+#vpnModal h3.modal-title::before{
+  content: 'If my photo site is unavailable...';
+}
+
+#vpnModal .modal-body p::before {
+  content: '...congrats on being in Russia. You need VPN to access my site (or any other Weebly-based site). Sorry.';
+}
+
+#vpnModal .modal-footer a::before {
+  content: 'Got it';
 }
 
 @media (max-width: 767px){
