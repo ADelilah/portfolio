@@ -156,6 +156,10 @@ a.navbar-brand {
   vertical-align: middle;
 }
 
+.navbar ion-icon {
+  vertical-align: middle;
+}
+
 .jumbotron div div div {
   opacity: 0.5;
 }
@@ -210,7 +214,7 @@ a.navbar-brand {
 }
 
 #vpnModal .modal-body p::before {
-  content: '...congrats on being in Russia. You need VPN to access my site (or any other Weebly-based site). Sorry.';
+  content: '...congrats on being in Russia. You need VPN to access my site (or any other Weebly-based sites). Sorry.';
 }
 
 #vpnModal .modal-footer a::before {
@@ -408,15 +412,68 @@ p.category {
   opacity: 0.4;
 }
 
+.scrollable-16x9 {
+  float: left;
+  position: relative; 
+  width: 100%;  
+  height: 0; 
+  padding-bottom: 62.5%;
+  margin-bottom: 40px;
+  overflow-y: scroll;
+}
+
+.scrollable-16x9 > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.scrollable-16x9 > div.scroll-me {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  display: flex;
+  justify-content: center;
+}
+
+.scrollable-16x9:hover div.scroll-me {
+  display: none;
+}
+
+.scrollable-16x9 > div.scroll-me > div {
+  width: 100px;
+  height: 100px;
+  padding: 30px 0px;
+  border-radius: 50%;
+  margin-top: 60px;
+  background: var(--text);
+  color: white;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+@media (max-width: 225px), (max-height: 160px) {
+  .viewer__controls__right-bottom .viewer__fullscreen   /*,
+
+  .viewer__controls__right-bottom .viewer__controls__container :not(.viewer__hand):not(.viewer__shadow):not(.viewer__controls):not(.viewer__controls-top):not(.viewer__site-logo):not(.viewer__pause):not(.viewer__click), 
+  .viewer__controls__right-bottom .viewer.viewer--v2.-h-lt-160.viewer__controls__container:not(.viewer__hand):not(.viewer__shadow):not(.viewer__controls):not(.viewer__controls-top):not(.viewer__site-logo):not(.viewer__pause):not(.viewer__click) 
+  */
+  {
+    display: initial;
+  }
+}
+
 /* ----------------- lightbox gallery-------------- */
 
 .modal-footer {
    justify-content: flex-start;
 }
 
-.lbox-title {
+/*.lbox-title {          ---- прибить?--------
   display: none;
-}
+}------ */
 
 .gallery-container {
   padding: 0px 10px;
@@ -448,9 +505,53 @@ p.category {
   border: none;
 }
 
+/*------*/
+
+.ekko-lightbox {
+  background: rgba(0,0,0,0.8);
+}
+
+.ekko-lightbox .modal-dialog {
+  margin: 20px auto 0;
+}
+
+.ekko-lightbox .modal-body, .ekko-lightbox .modal-footer {
+  padding: 0;
+}
+
+.ekko-lightbox .modal-content {
+  background: none;
+  height: auto;
+  border: none;
+}
+
+.ekko-lightbox .modal-footer {
+  border-top: none;
+  color: white;
+  margin: 10px 0 20px;
+}
+
+.ekko-lightbox .close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+}
+
+.ekko-lightbox .my-close > span {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  vertical-align: top;
+}
+
+/*--
+
 @media (max-width: 767px){
 
-  a[data-toggle="lightbox"] {
+  /*a[data-toggle="lightbox"] {
     pointer-events: none;
     cursor: default;
     color: var(--text);
@@ -459,7 +560,8 @@ p.category {
   .lbox-title {
     display: block;
   }
-}
+}*/
+
 
 @media (min-width: 992px){
 

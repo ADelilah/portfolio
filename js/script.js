@@ -26,14 +26,22 @@ $(this).addClass("active");
 
 });
 
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-  
-    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    }
-  
-});
+
+//showing ekko lightbox
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+
+                //cloning close btn from ekko-lightbox hidden header
+                $('.ekko-lightbox').append('<button type="button" class="close my-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10005</span></button>');
+
+                //var ekkoClose = $('.ekko-lightbox .close').clone();
+                //ekkoClose.appendTo('.ekko-lightbox .modal-content');
+            });
+
+
+
+//
 
 $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
