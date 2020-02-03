@@ -662,6 +662,13 @@ p.category {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+.carousel-indicators img.long-page-indicatior {
+  height: 66px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
 figure.right-floated {
   float: right;
   width: 18.75rem;

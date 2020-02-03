@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Neurodata Lab API</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top px-0 navbar-expand-lg nav-bg">
+      <div class="container">
+        <a class="navbar-brand pl-auto my-auto" href="../index.html">Acia Delilah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <ion-icon name="ios-link"></ion-icon>
+        </button>
+
+        <div class="collapse navbar-collapse ml-auto my-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="http://delilah.ru" onclick="$('#vpnModal').modal()"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><ion-icon name="logo-pinterest"></ion-icon> <span>Crafts</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c"><ion-icon name="logo-pinterest"></ion-icon> <span>Drawings</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/instagram/OPB0"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/facebook/Rh3z"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="mailto:delidance@gmail.com"><ion-icon name="ios-mail"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- vpn-modal-->
+    <div class="modal fade mods" id="vpnModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title"></h3>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="../images/vpn.svg" onerror="this.onerror=null; this.src='../images/vpn.png'">
+            <p class="m-0"></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-outline-primary" href="#" data-dismiss="modal"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end vpn-modal-->
+  </header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable mb-5">
+                <h1>Neurodata Lab API</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p><a href="https://neurodatalab.com" target="_blank">Neurodata Lab</a> builds AI that can recognize everyhting about humans - see them, hear them and empathize them. We call it Human Sensing. <a href="https://api.neurodatalab.dev" target="_blank">Neurodata Lab API service</a> provides developer access to the main modules. (Caution! Nerdy.)</p>
+                </div>  
+                <img class='proj-img laptop' src='../images/ndl-viz/cli.png'>
+
+
+                <h2>Client analytics</h2>
+                <p>Includes the following modules: 
+                  <ul>
+	                  <li>Sex & age detection (Sa)</li>
+	                  <li>Emotion recognition (Er or Er*)</li>
+	                  <li>Satisfaction index (Si)</li>
+                  </ul>
+                </p>
+                <p>These modules can process images or videos (frame by frame), both pre-loaded and real time.</p>
+                
+                <p>More states: view with guides and id, hovers and settings. Emotion recognition timeline is a stacked area chart.</p>
+                <div id="cli-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/ndl-viz/cli-1.jpg">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-viz/cli-2.jpg">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-viz/cli-3.jpg">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#cli-car" data-slide-to="0" class="active"><img src="../images/ndl-viz/cli-1.jpg"></li>
+                    <li data-target="#cli-car" data-slide-to="1"><img src="../images/ndl-viz/cli-2.jpg"></li>
+                    <li data-target="#cli-car" data-slide-to="2"><img src="../images/ndl-viz/cli-3.jpg"></li>
+                  </ol>
+                </div>
+
+                <h2>Physiology</h2>
+                <p>Includes the following modules: 
+                  <ul>
+	                  <li>Heart rate (Hr)</li>
+	                  <li>Breath rate (Br)</li>
+                  </ul>
+                </p>
+                <p>These modules can process only videos and have 'cold start' time of 10 and 15 seconds respectively.</p>
+                <img class='proj-img-small' src='../images/ndl-viz/phys.jpg'>
+
+                <h2>Body pose</h2>
+
+                <p>Includes the following modules: 
+                  <ul>
+	                  <li>Person detector (Pd)</li>
+	                  <li>Body pose (Bp)</li>
+                  </ul>
+                </p>
+                <p>These modules can process images or videos (frame by frame), both pre-loaded and real time. Body pose module returns only positions of 18 joints, connections between them is just a feature of the visualization.</p>
+                <img class='proj-img-small' src='../images/ndl-viz/pp.jpg'>
+
+                <h2>WIP: Demo portal</h2>
+                <p class="mb-5">Above vizualizations are the first step towards redesign of <a href="https://emotionsdemo.com" target="_blank">emotionsdemo.com</a> which we urgently built in the fall 2018. It isn't something I consider a design job, yet there you can try some of our technologies in action - online, for free and without any code.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: Splashfolio</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top px-0 navbar-expand-lg nav-bg">
+      <div class="container">
+        <a class="navbar-brand pl-auto my-auto" href="../index.html">Acia Delilah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <ion-icon name="ios-link"></ion-icon>
+        </button>
+
+        <div class="collapse navbar-collapse ml-auto my-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="http://delilah.ru" onclick="$('#vpnModal').modal()"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/handmade-с/"><ion-icon name="logo-pinterest"></ion-icon> <span>Crafts</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://ru.pinterest.com/acia_delilah/pics-and-words-c"><ion-icon name="logo-pinterest"></ion-icon> <span>Drawings</span></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/instagram/OPB0"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="https://urlgeni.us/facebook/Rh3z"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="nav-item mr-2">
+              <a target="_blank" class="nav-link" href="mailto:delidance@gmail.com"><ion-icon name="ios-mail"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- vpn-modal-->
+    <div class="modal fade mods" id="vpnModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title"></h3>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="../images/vpn.svg" onerror="this.onerror=null; this.src='../images/vpn.png'">
+            <p class="m-0"></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-outline-primary" href="#" data-dismiss="modal"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end vpn-modal-->
+  </header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable">
+                <h1>Splashfolio</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p>Design for the Splashfolio platform distributing photography tutorials of its own production.</p>
+                </div>  
+                <img class='proj-img laptop' src='../images/splash/splash-resp.png'>
+
+                <p>On a brief view designs may look inconsistent because of the constant change of the backgrounds. However, it is not happening in the real flow, as every product (tutorial) has one main illustration. Beautiful pictures that make an aspiring photographer wish to 'do it like this guy' is what sells tutorials after all.</p>
+                <p>Disclaimer: Images used in the design belong to Splashfolio's featured photographers, mostly <a href="http://danielkordan.com">Daniel Kordan</a>. Combinations of names and images are random, some names are fictional.</p>
+
+                <h2>Home</h2>
+                <p>Store is right here (mouse over the picture and scroll it).</p>
+                
+                <div id="home-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="scrollable-16x9 item active carousel-item mb-0">
+                      <div>
+                        <img class='proj-img-small mt-0' src='../images/splash/home.png'>
+                      </div>
+                      <div class="scroll-me"><div>Scroll me <div class="d-flex flex-column mt-1 align-items-center"><ion-icon name="arrow-up"></ion-icon><ion-icon style="margin-top: -7px;" name="arrow-down"></ion-icon></div></div></div>
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/home-cat.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/home-m.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#home-car" data-slide-to="0" class="active"><img class="long-page-indicatior" src="../images/splash/home.png"></li>
+                    <li data-target="#home-car" data-slide-to="1"><img src="../images/splash/home-cat.png"></li>
+                    <li data-target="#home-car" data-slide-to="2"><img src="../images/splash/home-m.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Tutorial page</h2>
+                <p><b>Pic 1-2.</b> Tutorial description is presented on two images, as its behavior is hard to replicate here: snap points, then standard scroll. I.e. content on the second screen replaces content on the first, then the scrolling continues as usual. Mouse over pic 2 to scroll.</p>
+                <p><b>Pic 3.</b> Tutorial page on a mobile.</p>
+                <p><b>Pic 4.</b> Tutorial trailer on pause.</p>
+                <p><b>Pic 5.</b> Modal window with suggestions that appears when a user adds the tutorial to bag.</p>
+                <div id="prod-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="item active carousel-item">
+                      <img src="../images/splash/product-1.png">
+                    </div>
+
+                    <div class="scrollable-16x9 item carousel-item mb-0">
+                      <div>
+                        <img class='proj-img-small mt-0' src='../images/splash/product-2.png'>
+                      </div>
+                      <div class="scroll-me"><div>Scroll me <div class="d-flex flex-column mt-1 align-items-center"><ion-icon name="arrow-up"></ion-icon><ion-icon style="margin-top: -7px;" name="arrow-down"></ion-icon></div></div></div>
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/product-m.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/trailer.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/product-3.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#prod-car" data-slide-to="0" class="active"><img src="../images/splash/product-1.png"></li>
+                    <li data-target="#prod-car" data-slide-to="1"><img class="long-page-indicatior" src="../images/splash/product-2.png"></li>
+                    <li data-target="#prod-car" data-slide-to="2"><img src="../images/splash/product-m.png"></li>
+                    <li data-target="#prod-car" data-slide-to="3"><img src="../images/splash/trailer.png"></li>
+                    <li data-target="#prod-car" data-slide-to="4"><img src="../images/splash/product-3.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Bag & checkout</h2>
+   
+                <div id="bag-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item carousel-item">
+                      <img src="../images/splash/bag-drop.png">
+                    </div>
+
+                    <div class="item active carousel-item">
+                      <img src="../images/splash/bag.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/bag-t.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/checkout-1.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img class='proj-img-small mt-0' style="position: absolute; left:0;" src='../images/splash/bg.png'>
+                    <div class="scrollable-16x9 mb-0">
+                      <div>
+                        <img class='proj-img-small mt-0' src='../images/splash/сheckout-2-nb.png'>
+                        
+                      </div>
+                      <div class="scroll-me"><div>Scroll me <div class="d-flex flex-column mt-1 align-items-center"><ion-icon name="arrow-up"></ion-icon><ion-icon style="margin-top: -7px;" name="arrow-down"></ion-icon></div></div></div>
+                    </div></div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#bag-car" data-slide-to="0"><img src="../images/splash/bag-drop.png"></li>
+                    <li data-target="#bag-car" data-slide-to="1" class="active"><img src="../images/splash/bag.png"></li>
+                    <li data-target="#bag-car" data-slide-to="2"><img src="../images/splash/bag-t.png"></li>
+                    <li data-target="#bag-car" data-slide-to="3"><img src="../images/splash/checkout-1.png"></li>
+                    <li data-target="#bag-car" data-slide-to="4"><img class="long-page-indicatior" src="../images/splash/checkout-2.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Profile & settings </h2>
+                <p>Purchased tutorials are downloadable and cannot be watched online - an existing client's solution I disagree with. Download links (per chapter of a tutorial) are available in the profile, each link works 3 times. </p>
+                <div id="set-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item carousel-item">
+                      <img src="../images/splash/profile-empty.png">
+                    </div>
+
+                    <div class="item active carousel-item">
+                      <img src="../images/splash/profile.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/profile-settings.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/profile-settings-2.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/profile-settings-m.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#set-car" data-slide-to="0"><img src="../images/splash/profile-empty.png"></li>
+                    <li data-target="#set-car" data-slide-to="1" class="active"><img src="../images/splash/profile.png"></li>
+                    <li data-target="#set-car" data-slide-to="2"><img src="../images/splash/profile-settings.png"></li>
+                    <li data-target="#set-car" data-slide-to="3"><img src="../images/splash/profile-settings-2.png"></li>
+                    <li data-target="#set-car" data-slide-to="4"><img src="../images/splash/profile-settings-m.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Etc.</h2>
+                <p>Some other pages.</p>
+                <div id="etc-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/splash/faq.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/login.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/login-create.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/login-forgot.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/login-m.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/splash/404.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#etc-car" data-slide-to="0" class="active"><img src="../images/splash/faq.png"></li>
+                    <li data-target="#etc-car" data-slide-to="1"><img src="../images/splash/login.png"></li>
+                    <li data-target="#etc-car" data-slide-to="2"><img src="../images/splash/login-create.png"></li>
+                    <li data-target="#etc-car" data-slide-to="3"><img src="../images/splash/login-forgot.png"></li>
+                    <li data-target="#etc-car" data-slide-to="4"><img src="../images/splash/login-m.png"></li>
+                    <li data-target="#etc-car" data-slide-to="5"><img src="../images/splash/404.png"></li>
+                  </ol>
+                </div>
+
+                <div class="mb-5"></div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
