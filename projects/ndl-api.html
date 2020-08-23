@@ -68,71 +68,198 @@
                 <h1>Neurodata Lab API</h1>
                 <p class='grey'>Interaction design</p>
                 <div class='proj-lead'>
-                  <p><a href="https://neurodatalab.com" target="_blank">Neurodata Lab</a> builds AI that can recognize everyhting about humans - see them, hear them and empathize them. We call it Human Sensing. <a href="https://api.neurodatalab.dev" target="_blank">Neurodata Lab API service</a> provides developer access to the main modules. (Caution! Nerdy.)</p>
+                  <p><a href="https://api.neurodatalab.dev" target="_blank">Neurodata Lab API service</a> provides developer access to the <a href="https://neurodatalab.com" target="_blank">Neurodata Lab</a> affective computing and computer vision technologies.</p>
                 </div>  
-                <img class='proj-img laptop' src='../images/ndl-viz/cli.png'>
+                <img class='proj-img laptop' src='../images/ndl-api/d-keys-mac-iphone.png'>
 
 
-                <h2>Client analytics</h2>
-                <p>Includes the following modules: 
+                <h2>Intro and structure</h2>
+                <p>The service allows a developer to integrate Neurodata Lab solutions into his product or service - with literally just 3 lines of code. For that the developer is provided with documentation and tools to manage and pay for <a href="https://en.wikipedia.org/wiki/Application_programming_interface_key" target="_blank">API keys</a> All solutions (modules) assume remote processing of audiovisual content. Already available modules are: 
                   <ul>
-	                  <li>Sex & age detection (Sa)</li>
-	                  <li>Emotion recognition (Er or Er*)</li>
-	                  <li>Satisfaction index (Si)</li>
+                  	<li>Face detector (Fd)</li>
+                  	<li>Person detector (Pd)</li>
+	                  <li>Emotion recognition (Er)</li>
+	                  <li>Multimodal emotion recognition (Er*)</li>
+	                  <li>Heart rate detector (Hr)</li>
+	                  <li>Body pose estimation (Bp)</li>
+	                  <li>Customer satisfaction index (Si)</li>
+	                  <li>Sex & age detector (Sa)</li>
                   </ul>
-                </p>
-                <p>These modules can process images or videos (frame by frame), both pre-loaded and real time.</p>
+              	The service has following structure:</p>
+
+				        <img class='proj-img-small' src='../images/ndl-api/structure.png'>
+
+        				<p></p>
+        				<p>Creating the below design I made the first attempt to come up with a draft guideline - made a palette for modules and an icon pack, picked a webfont that is similar to the Neurodata Lab logo.</p>
+        				<p>The biggest part of this projects was the authorized zone - the developer's dashboard - so I will start right from it.</p>
                 
-                <p>More states: view with guides and id, hovers and settings. Emotion recognition timeline is a stacked area chart.</p>
-                <div id="cli-car" class="carousel slide" data-interval="false">
+                <h2>Dashboard</h2>
+
+                <p>'Why the dashboard is blue?' some were asking. Then in a few days they were coming back with 'you know, the blue theme is kinda growing on me, leave it'. The theme was created rather to show off in promotional materials but after all made it to the production first - before a simpler white default theme. Well, now the beta will show if it was a bad move.</p>
+
+                <p>Dashboard has a cover layout on desktop, i.e. its edges are stick to the viewport. Table tab is scrollable vertically and horizontally, expandable vertically.</p>
+
+                <h3>Keys</h3>
+
+                <p>One key can give access to one or more modules. The default 'Keys' tab lists keys (active first), shows what modules they give access to and allows to create, download, update or revoke a key.</p>
+
+
+                <div id="key-car" class="carousel slide" data-interval="false">
 
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                     <div class="item active carousel-item">
-                      <img src="../images/ndl-viz/cli-1.jpg">
+                      <img src="../images/ndl-api/d-keys.png">
                     </div>
 
                     <div class="item carousel-item">
-                      <img src="../images/ndl-viz/cli-2.jpg">
+                      <img src="../images/ndl-api/d-keys-add.png">
                     </div>
 
                     <div class="item carousel-item">
-                      <img src="../images/ndl-viz/cli-3.jpg">
+                      <img src="../images/ndl-api/d-keys-m.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/d-keys-m-up.png">
                     </div>
 
                   </div>
 
                     <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <li data-target="#cli-car" data-slide-to="0" class="active"><img src="../images/ndl-viz/cli-1.jpg"></li>
-                    <li data-target="#cli-car" data-slide-to="1"><img src="../images/ndl-viz/cli-2.jpg"></li>
-                    <li data-target="#cli-car" data-slide-to="2"><img src="../images/ndl-viz/cli-3.jpg"></li>
+                    <li data-target="#key-car" data-slide-to="0" class="active"><img src="../images/ndl-api/d-keys.png"></li>
+                    <li data-target="#key-car" data-slide-to="1"><img src="../images/ndl-api/d-keys-add.png"></li>
+                    <li data-target="#key-car" data-slide-to="2"><img src="../images/ndl-api/d-keys-m-p.png"></li>
+                    <li data-target="#key-car" data-slide-to="3"><img src="../images/ndl-api/d-keys-m-up-p.png"></li>
                   </ol>
                 </div>
 
-                <h2>Physiology</h2>
-                <p>Includes the following modules: 
-                  <ul>
-	                  <li>Heart rate (Hr)</li>
-	                  <li>Breath rate (Br)</li>
-                  </ul>
-                </p>
-                <p>These modules can process only videos and have 'cold start' time of 10 and 15 seconds respectively.</p>
-                <img class='proj-img-small' src='../images/ndl-viz/phys.jpg'>
+                <h3>Costs and usage</h3>
 
-                <h2>Body pose</h2>
+                <p>Users are billed monthly based on the usage. 'Costs' tab shows spendings and usage (how many images/frames processed) per key per module for all keys active in the current payment period (month). Screens below also show states of the usage graph.</p>
 
-                <p>Includes the following modules: 
-                  <ul>
-	                  <li>Person detector (Pd)</li>
-	                  <li>Body pose (Bp)</li>
-                  </ul>
-                </p>
-                <p>These modules can process images or videos (frame by frame), both pre-loaded and real time. Body pose module returns only positions of 18 joints, connections between them is just a feature of the visualization.</p>
-                <img class='proj-img-small' src='../images/ndl-viz/pp.jpg'>
+                <div id="cos-car" class="carousel slide" data-interval="false">
 
-                <h2>WIP: Demo portal</h2>
-                <p class="mb-5">Above vizualizations are the first step towards redesign of <a href="https://emotionsdemo.com" target="_blank">emotionsdemo.com</a> which we urgently built in the fall 2018. It isn't something I consider a design job, yet there you can try some of our technologies in action - online, for free and without any code.</p>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/ndl-api/d-costs.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/d-plot-m.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#cos-car" data-slide-to="0" class="active"><img src="../images/ndl-api/d-costs.png"></li>
+                    <li data-target="#cos-car" data-slide-to="1"><img src="../images/ndl-api/d-plot-m-p.png"></li>
+                  </ol>
+                </div>
+
+                <h3>Payments</h3>
+
+                <p>A transaction history with breakdowns per module.</p>
+
+                <div id="pay-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/ndl-api/d-payments.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/d-payments-exp.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/d-payments-m.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/d-payments-method.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#pay-car" data-slide-to="0" class="active"><img src="../images/ndl-api/d-payments.png"></li>
+                    <li data-target="#pay-car" data-slide-to="1"><img src="../images/ndl-api/d-payments-exp.png"></li>
+                    <li data-target="#pay-car" data-slide-to="2"><img src="../images/ndl-api/d-payments-m-p.png"></li>
+                    <li data-target="#pay-car" data-slide-to="3"><img src="../images/ndl-api/d-payments-method.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Home</h2>
+
+                <div id="home-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="scrollable-16x9 item active carousel-item mb-0">
+                      <div>
+                        <img class='proj-img-small mt-0' src='../images/ndl-api/home.png'>
+                      </div>
+                      <div class="scroll-me"><div>Scroll me <div class="d-flex flex-column mt-1 align-items-center"><ion-icon name="arrow-up"></ion-icon><ion-icon style="margin-top: -7px;" name="arrow-down"></ion-icon></div></div></div>
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/home-m.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/login.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/login-c.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#home-car" data-slide-to="0" class="active"><img class="long-page-indicatior" src="../images/ndl-api/home.png"></li>
+                    <li data-target="#home-car" data-slide-to="1"><img src="../images/ndl-api/home-m.png"></li>
+                    <li data-target="#home-car" data-slide-to="2"><img src="../images/ndl-api/login.png"></li>
+                    <li data-target="#home-car" data-slide-to="3"><img src="../images/ndl-api/login-c.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Docs</h2>
+
+                <div id="doc-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="scrollable-16x9 item active carousel-item mb-0">
+                      <div>
+                        <img class='proj-img-small mt-0' src='../images/ndl-api/docs.png'>
+                      </div>
+                      <div class="scroll-me"><div>Scroll me <div class="d-flex flex-column mt-1 align-items-center"><ion-icon name="arrow-up"></ion-icon><ion-icon style="margin-top: -7px;" name="arrow-down"></ion-icon></div></div></div>
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/ndl-api/docs-m.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#doc-car" data-slide-to="0" class="active"><img class="long-page-indicatior" src="../images/ndl-api/docs.png"></li>
+                    <li data-target="#doc-car" data-slide-to="1"><img src="../images/ndl-api/docs-m.png"></li>
+                  </ol>
+                </div>
+
+
 
             </div>
         </div>
