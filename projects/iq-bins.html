@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dee's portfolio: IQ Bins</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,300,600" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,700" rel="stylesheet" type='text/css'>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top px-0 navbar-expand-lg nav-bg">
+      <div class="container">
+        <a class="navbar-brand pl-auto my-auto" href="../index.html">Acia Delilah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <ion-icon name="ios-link"></ion-icon>
+        </button>
+
+        <div class="collapse navbar-collapse ml-auto my-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="https://aciadelilah.weebly.com/"><ion-icon name="ios-link"></ion-icon> <span>Photos</span></a></li>
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="https://pinterest.com/acia_delilah/handmade-с/"><ion-icon name="logo-pinterest"></ion-icon> <span>Crafts</span></a></li>
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="https://pinterest.com/acia_delilah/pics-and-words-c"><ion-icon name="logo-pinterest"></ion-icon> <span>Drawings</span></a></li>
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="https://urlgeni.us/instagram/OPB0"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="https://urlgeni.us/facebook/Rh3z"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li class="nav-item mr-2">
+            <a target="_blank" class="nav-link" href="mailto:delidance@gmail.com"><ion-icon name="ios-mail"></ion-icon></a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+<section>
+ <div class="container">
+        <div class="row first-row">
+            <div class="container readable mb-5">
+                <h1>IQ Bin Tracker</h1>
+                <p class='grey'>Interaction design</p>
+                <div class='proj-lead'>
+                  <p>Smart emptying for smart trash cans. Re-design for <a href="https://www.unicainnovationcenter.nl/oplossingen/iq-bin/" target="_blank">IQ Bins tracker</a> targets sustainable waste collection from bins with sensors.</p> 
+                </div>  
+                <img class='proj-img laptop' src='../images/iq-bins/top-img.png'>
+
+
+                <h2>Bins in the city (Home)</h2>
+                <p>An IQ Bin has a sensor indicating how full(%) the bin is. There are 2 types of bins designed for urban environment:
+                  <ul>
+	                  <li>General trash bin (1 sensor)</li>
+	                  <li>Triple bin for paper, plastic and general trash (hence, 3 sensors)</li>
+                  </ul>
+                </p>
+                <p>Now imagine these bins around a city. In time they provide a lot of amazing data about how waste-busy streets are. It allows to optimize bins' positions and waste collection routs. And so save time and reduce emission.</p>
+                
+                <p>In the system a bin has 3 states: rather empty (<50%), rather full (50-75%) and full (>75%). These values are defined by underlying calculations. 
+                </p>
+                <p>Some states of the overview page: 
+                  <ul>
+                    <li>Default: bins on the map</li>
+                    <li>Dark mode</li>
+                    <li>A map layer (waste busy-quiet heat map)</li>
+                  </ul>
+                </p>
+                <div id="iqb-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/iq-bins/o-def.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/iq-bins/o-dark.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/iq-bins/o-heat.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#iqb-car" data-slide-to="0" class="active"><img src="../images/iq-bins/o-def.png"></li>
+                    <li data-target="#iqb-car" data-slide-to="1"><img src="../images/iq-bins/o-dark.png"></li>
+                    <li data-target="#iqb-car" data-slide-to="2"><img src="../images/iq-bins/o-heat.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Sensors</h2>
+                <p>To access real-time sensor statistics user has to select a bin in the street list. The below states show 3- and 1-sensor bins.
+                </p>
+                <div id="iqb-s-car" class="carousel slide" data-interval="false">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active carousel-item">
+                      <img src="../images/iq-bins/sen3.png">
+                    </div>
+
+                    <div class="item carousel-item">
+                      <img src="../images/iq-bins/sen.png">
+                    </div>
+
+                  </div>
+
+                    <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#iqb-s-car" data-slide-to="0" class="active"><img src="../images/iq-bins/sen3.png"></li>
+                    <li data-target="#iqb-s-car" data-slide-to="1"><img src="../images/iq-bins/sen.png"></li>
+                  </ol>
+                </div>
+
+                <h2>Route</h2>
+
+                <p>In this section system suggests most feasible waste collection routs: the best (default) route and some shorter options. Each route route includes all 'full' and some 'rather full' bins. </p>
+                <img class='proj-img-small' src='../images/iq-bins/route.png'>
+                <p>If and when IQ Bins Tracker will feature prediction (how soon a bin will get full based on the past data), routing can be largely improved. Namely, turned into an approximate future collection schedule with pre-baked routes. Then each best route may skip the outlying full bins as they will not get full till next collection (instead of bluntly going through all of them every time).</p>
+
+                <h2>Statistics</h2>
+
+                <p>[Poor choice of] statistics the system collects (so far) - per week, month or custom period.</p> 
+                <p> Since it's a redesign, I don't have a saying in what's here. What you see are: real time bin states, collection time (bins emptied in time vs too late), emission reduction in km and CO2 volume (comparing to past data), waste volume by type, fuel economy, bins before and after installation of smart ones.</p>
+                
+                <img class='proj-img-small' src='../images/iq-bins/stat.png'>
+                <p></p>
+                <p>I have issues with pretty much every widget. I can (and would) accomodate both waste volumes and collection times(in time / too late) in one major timeline. All the comparison with 'before you purchased our product' (if marketing insists) should go away from above the fold as soon as there's more relevant data to show. Total capacity of plastic waste bins across the town is a cute placeholder number: it is usefull as the average patient's body temperature across a hospital. Time / emission / km / money saved are different units for one value, and it deserves a separate plot. Just not now, but when prediction is available (so the more data we collect the more we optimize the routes) - then it is _actual_ dynamic. And I always can come up with more ;)</p>
+
+                <h2>Colors and icons</h2>
+
+                <p>Platform colors extend IQ Bins brand colors:</p>
+                <img class='proj-img-small' src='../images/iq-bins/pal.png'>
+                <img class='proj-img-small' src='../images/iq-bins/icons.png'>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
